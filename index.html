@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worst Fit Memory Allocation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Worst Fit Memory Allocation</h1>
+        <div class="inputs">
+            <label for="blockSizes">Block Sizes (Add commas in between Block Sizes):</label>
+            <input type="text" id="blockSizes" placeholder="Example: 750, 500, 300">
+            <br>
+            <label for="processSizes">Process Sizes (Add commas in between Process Sizes):</label>
+            <input type="text" id="processSizes" placeholder="Example: 200, 300, 150">
+            <br>
+            <button onclick="allocateMemory()">Allocate Memory</button>
+        </div>
+        <div id="blocks" class="blocks"></div>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
